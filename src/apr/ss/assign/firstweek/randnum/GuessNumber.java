@@ -1,7 +1,5 @@
 package apr.ss.assign.firstweek.randnum;
 
-import java.util.Scanner;
-
 public class GuessNumber {
 
     private final Integer randomNumber;
@@ -31,12 +29,14 @@ public class GuessNumber {
     }
 
     private boolean gameInstance(){
-        Scanner input = new Scanner(System.in);
+        int guess;
         int maxCorrect = randomNumber + 10;
         int minCorrect = randomNumber - 10;
 
         System.out.println("Please guess the number.");
-        int guess = input.nextInt();
+
+        InputHandler input = new InputHandler();
+        guess = input.getVerifiedInput();
 
         return ((guess >= minCorrect) && (guess <= maxCorrect));
 
