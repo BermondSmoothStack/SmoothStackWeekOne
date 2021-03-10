@@ -35,7 +35,7 @@ public class GuessNumber {
 
         System.out.println("Please guess the number.");
 
-        InputHandler input = new InputHandler();
+        GuessNumberInputHandler input = new GuessNumberInputHandler();
         guess = input.getVerifiedInput();
 
         return ((guess >= minCorrect) && (guess <= maxCorrect));
