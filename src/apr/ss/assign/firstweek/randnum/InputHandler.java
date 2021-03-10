@@ -1,17 +1,18 @@
 package apr.ss.assign.firstweek.randnum;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputHandler {
-    private int min = 0;
-    private int max = 100;
-    private int verifiedInput;
+    private Integer min = 0;
+    private Integer max = 100;
+    private Integer verifiedInput;
 
     public InputHandler(){
         handler();
     }
 
-    public InputHandler(int min, int max){
+    public InputHandler(Integer min, Integer max){
         this.min = min;
         this.max = max;
 
@@ -19,18 +20,31 @@ public class InputHandler {
     }
 
     private void handler(){
-        Scanner input = new Scanner(System.in);
-        int unverifiedInput = input.nextInt();
-        while (!verifyInput(unverifiedInput)) {
-            System.out.println("Please enter an integer between ["+min+", "+max+"]");
-            unverifiedInput = input.nextInt();
+        int unverifiedIntInput = scanIntInput();
+
+        while (!verifyInputRange(unverifiedIntInput)) {
+            System.out.println("Please enter an integer between["+min+", "+max+"]");
+            unverifiedIntInput = scanIntInput();
         }
 
-        verifiedInput = unverifiedInput;
+        verifiedInput = unverifiedIntInput;
     }
 
+    private Integer scanIntInput() {
+        Scanner input = new Scanner(System.in);
+        Integer intInput;
 
-    private boolean verifyInput(int input){
+        try {
+            intInput = input.nextInt();
+        } catch (InputMismatchException e){
+            System.out.println("Please enter an integer");
+            intInput = scanIntInput();
+        }
+
+        return intInput;
+    }
+
+    private boolean verifyInputRange(Integer input){
         return ((input >= min) && (input <= max));
     }
 
