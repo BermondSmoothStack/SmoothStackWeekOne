@@ -1,4 +1,6 @@
 package apr.ss.assign.firstweek.shapes;
 
-public class Shape {
+public interface Shape {
+    Integer calculateArea();
+    String display();
 }
