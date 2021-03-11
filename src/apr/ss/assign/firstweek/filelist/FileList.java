@@ -1,13 +1,16 @@
 package apr.ss.assign.firstweek.filelist;
 
+import apr.ss.assign.firstweek.FileInputHandler;
+
 import java.io.File;
 
 public class FileList {
 
     public FileList(){
         FileListFile fl;
-        File f = new FileListInputHandler().getVerifiedInput();
+        File f = new FileInputHandler().getVerifiedInput();
         if (f.isDirectory()){
+            System.out.println('h');
             fl = new DirectoryFileListFile(f.getName(), f.getPath());
             for (File item: f.listFiles()) {
                 if(item.isDirectory()){

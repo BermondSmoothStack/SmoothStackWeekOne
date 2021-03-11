@@ -68,13 +68,14 @@ public class DirectoryFileListFile extends FileListFile {
 
     public String toString(int tabs){
         StringBuilder out = new StringBuilder();
+        if (null == content)
+            return "";
         for (FileListFile fl: content) {
             if (fl.isExecutable()){
                 out.append('\n');
                 for (int i = 0; i < tabs; i++) {
                     out.append('\t');
                 }
-                out.append(tabs);
                 out.append(fl.filename);
             } else {
                 out.append('\n');
