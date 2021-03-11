@@ -1,8 +1,8 @@
 package apr.ss.assign.firstweek.filelist;
 
-public class ExecutableFile extends File{
+public class ExecutableFileListFile extends FileListFile {
 
-    public ExecutableFile(String f, String p) {
+    public ExecutableFileListFile(String f, String p) {
         super(f, p);
     }
 

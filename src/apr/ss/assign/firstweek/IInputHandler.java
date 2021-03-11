@@ -2,9 +2,9 @@ package apr.ss.assign.firstweek;
 
 public interface IInputHandler {
 
-    Integer scanInput();
+    Object scanInput();
 
-    Integer getInput();
+    Object getInput();
 
     void handler();
 
