@@ -1,16 +1,13 @@
-package apr.ss.assign.firstweek.shapes;
+package apr.ss.assign.firstweek.sum;
 
-import apr.ss.assign.firstweek.InputHandler;
+import apr.ss.assign.firstweek.IntInputHandler;
 
-public class ShapeValuesInputHandler implements InputHandler {
+public class SumIntInputHandler extends IntInputHandler {
 
-    private Integer verifiedInput;
-
-    public ShapeValuesInputHandler(){
+    public SumIntInputHandler(){
         handler();
     }
 
-    @Override
     public Integer getVerifiedInput() {
         return verifiedInput;
     }
@@ -22,11 +19,11 @@ public class ShapeValuesInputHandler implements InputHandler {
 
     @Override
     public Integer getMin() {
-        return 0;
+        return 1;
     }
 
     @Override
     public Integer getMax() {
-        return 100;
+        return 999;
     }
 }

@@ -3,11 +3,13 @@ package apr.ss.assign.firstweek;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public interface InputHandler {
+public abstract class IntInputHandler  implements  IInputHandler{
 
-    Object getVerifiedInput();
+    protected Integer verifiedInput;
+    protected Integer min = 0;
+    protected Integer max = 100;
 
-    default Integer scanInput(){
+    public Integer scanInput(){
         Scanner input = new Scanner(System.in);
         Integer intInput;
 
@@ -21,22 +23,26 @@ public interface InputHandler {
         return intInput;
     }
 
-    default Integer getInput(){
+     public Integer getInput(){
         int unverifiedIntInput = scanInput();
 
         while (!verifyInputRange(unverifiedIntInput)) {
-            System.out.println("Please enter an integer between["+getMin()+", "+getMax()+"]");
+            StringBuilder message = new StringBuilder("Please enter an integer between[");
+            message.append(getMin()).append(", ").append(getMax()).append("]");
+            System.out.println(message.toString());
             unverifiedIntInput = scanInput();
         }
 
         return unverifiedIntInput;
     }
 
-    void handler();
-    default boolean verifyInputRange(Integer input){
+    protected boolean verifyInputRange(Integer input){
         return ((input >= getMin()) && (input <= getMax()));
     }
-    Integer getMin();
-    Integer getMax();
+
+    protected abstract Integer getMin();
+    protected abstract Integer getMax();
+    public Integer getVerifiedInput(){ return verifiedInput;}
+
 
 }

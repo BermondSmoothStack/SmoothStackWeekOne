@@ -4,7 +4,7 @@ public class InitializeStarPatterns {
 
     public InitializeStarPatterns() {
         System.out.print("Enter the length of the patterns: ");
-        Integer length = new StarHeightInputHandler().getVerifiedInput();
+        Integer length = new StarHeightIntInputHandler().getVerifiedInput();
         StarPatterns sp = new StarPatterns(length);
 
         sp.printPatternOne();

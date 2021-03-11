@@ -1,16 +1,13 @@
-package apr.ss.assign.firstweek.starpattern;
+package apr.ss.assign.firstweek.shapes;
 
-import apr.ss.assign.firstweek.InputHandler;
+import apr.ss.assign.firstweek.IntInputHandler;
 
-public class StarHeightInputHandler implements InputHandler {
+public class ShapeSelectIntInputHandler extends IntInputHandler {
 
-    private Integer verifiedInput;
-
-    public StarHeightInputHandler(){
+    public ShapeSelectIntInputHandler(){
         handler();
     }
 
-    @Override
     public Integer getVerifiedInput() {
         return verifiedInput;
     }
@@ -27,6 +24,6 @@ public class StarHeightInputHandler implements InputHandler {
 
     @Override
     public Integer getMax() {
-        return 100;
+        return 2;
     }
 }

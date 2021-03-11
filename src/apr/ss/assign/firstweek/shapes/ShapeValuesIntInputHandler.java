@@ -1,15 +1,13 @@
 package apr.ss.assign.firstweek.shapes;
 
-import apr.ss.assign.firstweek.InputHandler;
+import apr.ss.assign.firstweek.IntInputHandler;
 
-public class ShapeSelectInputHandler implements InputHandler {
-    private Integer verifiedInput;
+public class ShapeValuesIntInputHandler extends IntInputHandler {
 
-    public ShapeSelectInputHandler(){
+    public ShapeValuesIntInputHandler(){
         handler();
     }
 
-    @Override
     public Integer getVerifiedInput() {
         return verifiedInput;
     }
@@ -21,11 +19,11 @@ public class ShapeSelectInputHandler implements InputHandler {
 
     @Override
     public Integer getMin() {
-        return 1;
+        return 0;
     }
 
     @Override
     public Integer getMax() {
-        return 2;
+        return 100;
     }
 }

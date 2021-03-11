@@ -1,16 +1,13 @@
-package apr.ss.assign.firstweek.sum;
+package apr.ss.assign.firstweek.starpattern;
 
-import apr.ss.assign.firstweek.InputHandler;
+import apr.ss.assign.firstweek.IntInputHandler;
 
-public class SumInputHandler implements InputHandler {
+public class StarHeightIntInputHandler extends IntInputHandler {
 
-    private Integer verifiedInput;
-
-    public SumInputHandler(){
+    public StarHeightIntInputHandler(){
         handler();
     }
 
-    @Override
     public Integer getVerifiedInput() {
         return verifiedInput;
     }
@@ -27,6 +24,6 @@ public class SumInputHandler implements InputHandler {
 
     @Override
     public Integer getMax() {
-        return 999;
+        return 100;
     }
 }
