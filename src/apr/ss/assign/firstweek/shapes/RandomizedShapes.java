@@ -12,7 +12,7 @@ public class RandomizedShapes implements ExecuteShape {
     public Integer[] fetchShapeValues(){
         Integer[] values = new Integer[5];
         for (int i = 0; i < 5; i++) {
-            values[i] = new GenerateNumber().randomNumber;
+            values[i] = (new GenerateNumber()).randomNumber;
         }
 
         return values;

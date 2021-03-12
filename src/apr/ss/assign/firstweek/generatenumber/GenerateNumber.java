@@ -5,9 +5,14 @@ import java.util.ArrayList;
 public class GenerateNumber {
 
     public int randomNumber;
-    private final int max = 100;
+    private int max = 100;
 
     public GenerateNumber(){
+        randomNumber = (int) (Math.random() * max);
+    }
+
+    public GenerateNumber(int max) {
+        this.max = max;
         randomNumber = (int) (Math.random() * max);
     }
 
@@ -18,6 +23,4 @@ public class GenerateNumber {
             randomNumber = (int) (Math.random() * max);
 
     }
-
-
 }
