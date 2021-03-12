@@ -29,4 +29,8 @@ public class Consumer implements IConsumer{
             return false;
         }
     }
+
+    public boolean isConsumer(){
+        return true;
+    }
 }

@@ -1,12 +1,23 @@
 package apr.ss.assign.firstweek.consumerproducer;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class InitializeTransaction {
 
     public InitializeTransaction() {
-        new Transaction(new Consumer());
-        new Transaction(new Producer());
-        new Transaction(new Consumer());
-        new Transaction(new Producer());
+
+        Queue<Consumer> consumerQueue = new LinkedList<>();
+        consumerQueue.add(new Consumer());
+        consumerQueue.add(new Consumer());
+        consumerQueue.add(new Consumer());
+        new ConsumerTransaction(consumerQueue);
+
+        Queue<Producer> producerQueue = new LinkedList<>();
+        producerQueue.add(new Producer());
+        producerQueue.add(new Producer());
+        producerQueue.add(new Producer());
+        new ProducerTransaction(producerQueue);
 
     }
 }

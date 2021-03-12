@@ -8,4 +8,8 @@ public class Producer implements IProducer {
         Thread.sleep((new GenerateNumber(999)).randomNumber);
         return (new GenerateNumber()).randomNumber;
     }
+
+    public boolean isProducer(){
+        return true;
+    }
 }
