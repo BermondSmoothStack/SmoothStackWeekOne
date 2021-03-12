@@ -1,8 +1,8 @@
 package apr.ss.assign.firstweek;
 
-import apr.ss.assign.firstweek.consumerproducer.ConsumerProducerTestSuite;
-import apr.ss.assign.firstweek.linetest.LineTestSuite;
-import apr.ss.assign.firstweek.starpattern.StarPatternsTestSuite;
+import apr.ss.assign.firstweek.dayfour.consumerproducer.ConsumerProducerTestSuite;
+import apr.ss.assign.firstweek.dayfour.linetest.LineTestSuite;
+import apr.ss.assign.firstweek.dayone.starpattern.StarPatternsTestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
