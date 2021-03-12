@@ -12,7 +12,5 @@ public class ProducerTest {
         int max = 999;
         Integer mynum = new Producer().produce();
         assertTrue(min <= mynum && mynum <= max);
-
-
     }
 }

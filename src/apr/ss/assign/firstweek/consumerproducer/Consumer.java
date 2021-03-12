@@ -21,7 +21,7 @@ public class Consumer implements IConsumer{
             basket = new ArrayList<>();
         }
         Thread.sleep((new GenerateNumber(999)).randomNumber);
-        if (item != -1) {
+        if (item > -1) {
             basket.add(item);
             return true;
         } else {
