@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.fileappend;
 
-import apr.ss.assign.firstweek.FileInputHandler;
+import apr.ss.assign.firstweek.inputhandler.FileInputHandler;
 
 import java.io.File;
 

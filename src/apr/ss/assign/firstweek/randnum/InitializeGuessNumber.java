@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.randnum;
 
-import apr.ss.assign.firstweek.GenerateNumber;
+import apr.ss.assign.firstweek.generatenumber.GenerateNumber;
 
 public class InitializeGuessNumber {
 

@@ -1,4 +1,4 @@
-package apr.ss.assign.firstweek;
+package apr.ss.assign.firstweek.inputhandler;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

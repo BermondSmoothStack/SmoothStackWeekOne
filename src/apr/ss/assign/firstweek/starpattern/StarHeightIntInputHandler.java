@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.starpattern;
 
-import apr.ss.assign.firstweek.IntInputHandler;
+import apr.ss.assign.firstweek.inputhandler.IntInputHandler;
 
 public class StarHeightIntInputHandler extends IntInputHandler {
 

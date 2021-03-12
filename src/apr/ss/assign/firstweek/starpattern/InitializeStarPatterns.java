@@ -7,9 +7,9 @@ public class InitializeStarPatterns {
         Integer length = new StarHeightIntInputHandler().getVerifiedInput();
         StarPatterns sp = new StarPatterns(length);
 
-        sp.printPatternOne();
-        sp.printPatternTwo();
-        sp.printPatternThree();
-        sp.printPatternFour();
+        System.out.println(sp.printPatternOne());
+        System.out.println(sp.printPatternTwo());
+        System.out.println(sp.printPatternThree());
+        System.out.println(sp.printPatternFour());
     }
 }

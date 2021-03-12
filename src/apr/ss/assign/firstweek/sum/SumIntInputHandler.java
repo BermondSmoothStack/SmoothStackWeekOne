@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.sum;
 
-import apr.ss.assign.firstweek.IntInputHandler;
+import apr.ss.assign.firstweek.inputhandler.IntInputHandler;
 
 public class SumIntInputHandler extends IntInputHandler {
 

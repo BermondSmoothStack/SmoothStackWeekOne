@@ -1,4 +1,4 @@
-package apr.ss.assign.firstweek;
+package apr.ss.assign.firstweek.generatenumber;
 
 import java.util.ArrayList;
 

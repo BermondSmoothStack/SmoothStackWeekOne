@@ -8,7 +8,7 @@ public class StarPatterns {
         this.length = length-1;
     }
 
-    public void printPatternOne(){
+    public String printPatternOne(){
         String header = "1)\n";
         StringBuilder content = new StringBuilder(header);
 
@@ -19,11 +19,11 @@ public class StarPatterns {
             content.append('\n');
         }
 
-        System.out.println(content.toString());
+        return content.toString();
 
     }
 
-    public void printPatternTwo(){
+    public String printPatternTwo(){
         String header = "2)\n";
         StringBuilder content = new StringBuilder(header);
 
@@ -34,10 +34,10 @@ public class StarPatterns {
             content.append('\n');
         }
 
-        System.out.println(content.toString());
+        return (content.toString());
     }
 
-    public void printPatternThree(){
+    public String printPatternThree(){
         String header = "3)\n";
         StringBuilder content = new StringBuilder(header);
 
@@ -47,10 +47,10 @@ public class StarPatterns {
             content.append('\n');
         }
 
-        System.out.println(content.toString());
+        return (content.toString());
     }
 
-    public void printPatternFour(){
+    public String printPatternFour(){
         String header = "4)\n";
         StringBuilder content = new StringBuilder(header);
 
@@ -60,7 +60,7 @@ public class StarPatterns {
             content.append('\n');
         }
 
-        System.out.println(content.toString());
+        return (content.toString());
     }
 
     private String buildPyramid(Integer height){

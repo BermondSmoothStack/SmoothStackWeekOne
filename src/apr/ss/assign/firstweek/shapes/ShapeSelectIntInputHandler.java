@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.shapes;
 
-import apr.ss.assign.firstweek.IntInputHandler;
+import apr.ss.assign.firstweek.inputhandler.IntInputHandler;
 
 public class ShapeSelectIntInputHandler extends IntInputHandler {
 

@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.charlookup;
 
-import apr.ss.assign.firstweek.StringInputHandler;
+import apr.ss.assign.firstweek.inputhandler.StringInputHandler;
 import apr.ss.assign.firstweek.fileappend.FileAppendInputHandler;
 
 import java.io.FileReader;

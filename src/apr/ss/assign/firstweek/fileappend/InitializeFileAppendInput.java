@@ -1,6 +1,6 @@
 package apr.ss.assign.firstweek.fileappend;
 
-import apr.ss.assign.firstweek.StringInputHandler;
+import apr.ss.assign.firstweek.inputhandler.StringInputHandler;
 
 import java.io.IOException;
 import java.nio.file.Files;

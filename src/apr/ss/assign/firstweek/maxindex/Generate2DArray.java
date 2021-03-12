@@ -1,5 +1,5 @@
 package apr.ss.assign.firstweek.maxindex;
-import apr.ss.assign.firstweek.GenerateNumber;
+import apr.ss.assign.firstweek.generatenumber.GenerateNumber;
 
 import java.util.ArrayList;
 
