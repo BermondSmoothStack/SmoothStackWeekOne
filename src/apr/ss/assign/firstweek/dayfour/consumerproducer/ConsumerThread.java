@@ -14,10 +14,8 @@ public class ConsumerThread extends Thread {
     @Override
     public void run() {
         super.run();
-        Iterator<Consumer> itr = consumerQueue.iterator();
 
-        while(itr.hasNext()) {
-            Consumer consumer = itr.next();
+        for (Consumer consumer : consumerQueue) {
             boolean success = consumerTransactionHandler(consumer);
             while (!success) {
                 success = consumerTransactionHandler(consumer);

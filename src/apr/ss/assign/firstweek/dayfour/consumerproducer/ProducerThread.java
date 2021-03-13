@@ -13,10 +13,8 @@ public class ProducerThread extends Thread {
 
     @Override
     public void run() {
-        Iterator<Producer> itr = producerQueue.iterator();
 
-        while(itr.hasNext()) {
-            Producer producer = itr.next();
+        for (Producer producer : producerQueue) {
             boolean success = producerTransactionHandler(producer);
             while (!success) {
                 success = producerTransactionHandler(producer);
