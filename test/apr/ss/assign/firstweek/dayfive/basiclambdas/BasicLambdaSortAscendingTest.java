@@ -25,7 +25,7 @@ public class BasicLambdaSortAscendingTest {
         expected.add("00004");
         expected.add("500000");
 
-        List<String> actual = new BasicLambdaSortAscending(list).getSorted();
+        List<String> actual = BasicLambdaSortAscending.getSorted(list);
         assertArrayEquals(expected.toArray(new String[0]), actual.toArray(new String[0]));
 
 

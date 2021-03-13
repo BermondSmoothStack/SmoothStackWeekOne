@@ -17,11 +17,10 @@ public class InitiateBasicLambdaClass {
         list.add("eeeejhellowsl");
 
 
-        System.out.println(new BasicLambdaSortEFirst(list).getSorted());
-        System.out.println(new BasicLambdaSortAscending(list).getSorted());
-        System.out.println(new BasicLambdaSortDesc(list).getSorted());
-        System.out.println(new BasicLambdaSortFirstChar(list).getSorted());
-        System.out.println(new BasicLambdaStaticHelper(list).getSorted());
+        System.out.println(BasicLambdaSortEFirst.getSorted(list));
+        System.out.println(BasicLambdaSortAscending.getSorted(list));
+        System.out.println(BasicLambdaSortDesc.getSorted(list));
+        System.out.println(BasicLambdaSortFirstChar.getSorted(list));
 
 
     }

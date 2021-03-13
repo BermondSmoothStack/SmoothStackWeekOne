@@ -25,7 +25,7 @@ public class BasicLambdaSortDescTest {
         expected.add("200");
         expected.add("01");
 
-        List<String> actual = new BasicLambdaSortDesc(list).getSorted();
+        List<String> actual = BasicLambdaSortDesc.getSorted(list);
         assertArrayEquals(expected.toArray(new String[0]), actual.toArray(new String[0]));
     }
 }

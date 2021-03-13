@@ -5,6 +5,6 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({BasicLambdaStaticHelperTest.class, BasicLambdaSortEFirstTest.class, BasicLambdaSortDescTest.class, BasicLambdaSortAscendingTest.class, BasicLambdaSortFirstCharTest.class})
+@SuiteClasses({BasicLambdaSortEFirstTest.class, BasicLambdaSortDescTest.class, BasicLambdaSortAscendingTest.class, BasicLambdaSortFirstCharTest.class})
 public class BasicLambdasTestSuite {
 }

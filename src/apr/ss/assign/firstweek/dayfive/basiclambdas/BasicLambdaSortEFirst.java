@@ -4,12 +4,9 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class BasicLambdaSortEFirst implements BasicLambdaSort {
+public class BasicLambdaSortEFirst {
 
-    List<String> sorted;
-
-    public BasicLambdaSortEFirst(List<String> unsorted) {
-
+    public static List<String> getSorted(List<String> unsorted) {
         LambdaInterface lambdaSortE = list -> {
 
             list.sort((o1, o2) -> o2.charAt(0) == o1.charAt(0) ? 0 : o1.charAt(0) == 'e' ? -1 : 1);
@@ -17,10 +14,6 @@ public class BasicLambdaSortEFirst implements BasicLambdaSort {
             return list;
         };
 
-        this.sorted = lambdaSortE.display(unsorted);
-    }
-
-    public List<String> getSorted() {
-        return sorted;
+        return lambdaSortE.display(unsorted);
     }
 }
