@@ -1,7 +1,7 @@
 package apr.ss.assign.firstweek.dayfour.consumerproducer;
 
-public interface IProducer {
+public interface IProducer<T> {
 
-    Object produce() throws InterruptedException;
+    T produce() throws InterruptedException;
 
 }

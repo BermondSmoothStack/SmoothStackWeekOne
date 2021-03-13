@@ -1,7 +1,7 @@
 package apr.ss.assign.firstweek.dayfour.consumerproducer;
 
-public interface IConsumer {
+public interface IConsumer<T> {
 
-    boolean consume(Integer item) throws InterruptedException;
+    boolean consume(T item) throws InterruptedException;
 
 }

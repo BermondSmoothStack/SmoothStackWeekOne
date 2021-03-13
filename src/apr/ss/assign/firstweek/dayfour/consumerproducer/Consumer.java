@@ -5,7 +5,7 @@ import apr.ss.assign.firstweek.generatenumber.GenerateNumber;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Consumer implements IConsumer{
+public class Consumer implements IConsumer<Integer>{
     private List<Integer> basket;
 
     public Consumer() {
