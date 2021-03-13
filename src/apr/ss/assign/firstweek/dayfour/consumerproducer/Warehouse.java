@@ -21,6 +21,7 @@ public class Warehouse {
 
     public void setShelf(Stack<Integer> shelf) {
         this.shelf = shelf;
+        // TODO: check if new shelf is over limit
     }
 
     public boolean addToShelf(Integer item) {
@@ -36,6 +37,7 @@ public class Warehouse {
     public Integer removeFromShelf() {
         if (!shelf.isEmpty())
             return shelf.pop();
+        System.out.println("Warehouse empty.");
         return -1;
     }
 

@@ -1,8 +1,8 @@
 package apr.ss.assign.firstweek.dayfour.consumerproducer;
 
-public interface IMarket {
+public interface IMarket<T> {
 
-    boolean buy(Integer item);
-    Integer sell();
+    boolean buy(T item);
+    T sell();
 
 }

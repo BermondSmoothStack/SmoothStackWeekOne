@@ -2,11 +2,11 @@ package apr.ss.assign.firstweek.dayfour.consumerproducer;
 
 import java.util.Stack;
 
-public class Market implements IMarket {
+// Singleton
+public class Market implements IMarket<Integer> {
 
     private static volatile Market instance;
     private final Warehouse warehouse;
-
 
     private Market() {
         warehouse = new Warehouse(new Stack<>());
