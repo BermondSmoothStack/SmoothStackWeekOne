@@ -1,7 +1,5 @@
 package apr.ss.assign.firstweek.dayfive.basiclambdas;
 
-import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.List;
 
 public class BasicLambdaSortEFirst {
