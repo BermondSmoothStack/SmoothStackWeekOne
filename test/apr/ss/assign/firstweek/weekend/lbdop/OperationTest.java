@@ -1,9 +1,6 @@
 package apr.ss.assign.firstweek.weekend.lbdop;
 
-import apr.ss.assign.firstweek.weekend.lbdop.Operation;
 import org.junit.Test;
-
-
 import static org.junit.Assert.*;
 
 public class OperationTest {
@@ -28,7 +25,6 @@ public class OperationTest {
                 "COMPOSITE"
         };
 
-
         for (int i = 1; i < Integer.parseInt(stub[0]); i++) {
             String[] test = stub[i].split(" ");
             Integer op = Integer.parseInt(test[0]);
@@ -37,7 +33,6 @@ public class OperationTest {
             switch (op) {
                 case 1:
                     actual = Operation.isOdd().process(in);
-
                     break;
                 case 2:
                     actual = Operation.isPrime().process(in);
