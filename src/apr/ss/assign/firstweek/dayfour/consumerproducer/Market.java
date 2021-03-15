@@ -10,6 +10,7 @@ public class Market implements IMarket<Integer> {
 
     private Market() {
         warehouse = new Warehouse(new Stack<>());
+        warehouse.setLimit(3);
     }
 
     public static Market getInstance(){

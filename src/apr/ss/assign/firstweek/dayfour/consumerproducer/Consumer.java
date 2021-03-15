@@ -5,10 +5,15 @@ import apr.ss.assign.firstweek.generatenumber.GenerateNumber;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Consumer implements IConsumer<Integer>{
+public class Consumer implements IConsumer<Integer> {
     private List<Integer> basket;
+    private String name = "anonymous consumer";
 
     public Consumer() {
+    }
+
+    public Consumer(String name) {
+        this.name = name;
     }
 
     public Consumer(List<Integer> basket) {
@@ -17,20 +22,23 @@ public class Consumer implements IConsumer<Integer>{
 
     @Override
     public boolean consume(Integer item) throws InterruptedException {
-        if (null == basket){
+        System.out.println(name + " tries to consume an item.");
+        if (null == basket) {
             basket = new ArrayList<>();
         }
         Thread.sleep((new GenerateNumber(999)).randomNumber);
-        if (item > -1) {
+        if (null != item && item > -1) {
             basket.add(item);
+            System.out.println(name + " successfully consumed " + item);
             return true;
         } else {
-            System.out.println("Item out of stock.");
+            System.out.println(name + " failed. Item out of stock.");
             return false;
         }
     }
 
-    public boolean isConsumer(){
+    @Override
+    public boolean isConsumer() {
         return true;
     }
 }

@@ -26,10 +26,11 @@ public class Warehouse {
 
     public boolean addToShelf(Integer item) {
         if (!isFull()) {
+            System.out.println("New item added to the shelf.");
             this.shelf.push(item);
             return true;
         } else {
-            System.out.println("Warehouse full.");
+            System.out.println("Warehouse failed to put the item into the shelf. Warehouse full.");
             return false;
         }
     }
